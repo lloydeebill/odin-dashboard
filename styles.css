@@ -53,22 +53,20 @@ h6 {
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: auto 1fr; /* Change from 1fr 6fr to auto 1fr to fit content */
   min-height: 100vh;
 }
 
 .header {
   background-color: white;
-  padding: 20px 70px 10px 70px;
+  padding: 40px 70px 40px 70px;
   display: grid;
+  gap: 12px;
   grid-column: 2 / 6;
   
 }
 
-.upper-name {
-  display: flex;
-  justify-content: center;
-}
+
 
 .upper-header {
   display: grid;
@@ -76,10 +74,6 @@ h6 {
   align-items: center;
 }
 
-.lower-name {
-  display: grid;
-  align-items: center;
-}
 
 
 .banner {
@@ -91,7 +85,6 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
 
 
 .sidebar {
@@ -202,3 +195,46 @@ button {
   display: flex;
   flex-wrap: wrap ;
 }
+
+.icons {
+  font-size: 5px;
+}
+
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.upper-name {
+  display: grid;
+  grid-template-columns: 30px 40px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.upper-name > p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-pic {
+  border-radius: 50px;
+}
+
+
+.lower-name {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+}
+
+.lower-name > div > p:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+}
+
