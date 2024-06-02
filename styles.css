@@ -2,28 +2,50 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-#root, #__next {
+
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -37,10 +59,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header {
   background-color: white;
+  padding: 20px 70px 10px 70px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-column: 2 / 6;
-  grid-row: 1 / 2;
+  
 }
 
 .upper-name {
@@ -48,14 +70,19 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.upper-header{
+.upper-header {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
+.lower-name {
+  display: grid;
+  align-items: center;
+}
 
-.banner{
+
+.banner {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -65,18 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.lower-name {
-  margin-left: 100px;
 
-}
-
-button {
-  width: 80px;
-  height: 30px;
-  margin: 5px;
-  border-radius: 20px;
-  background-color: aqua
-}
 
 .sidebar {
   background-color: rgba(231, 3, 91, 0.86);
@@ -85,6 +101,7 @@ button {
   gap: 15px;
   grid-row: 1 / 6;
   grid-column: 1/2;
+  padding: 0 50px;
 }
 
 .main-content {
@@ -103,7 +120,7 @@ button {
 }
 
 
-.right-card-container{
+.right-card-container {
   display: grid;
   margin: 15px 20px 30px 0px;
   gap: 18px;
@@ -114,14 +131,14 @@ button {
   padding: 15px;
 }
 
-.right-card-container > .card {
+.right-card-container>.card {
   height: 300px;
   background-color: white;
   border-radius: 10px;
 
 }
 
-.left-card-container > .card {
+.left-card-container>.card {
   height: 200px;
   background-color: white;
   border-radius: 10px;
@@ -139,39 +156,38 @@ button {
   font-size: 20px;
 }
 
-.upper-sidebar > h1 {
+.upper-sidebar>h1 {
   padding: 10px;
   margin-bottom: 50px;
 }
 
-.upper-sidebar > ul {
+.upper-sidebar>ul {
   display: grid;
   gap: 20px;
   list-style-type: none;
 }
 
-.lower-nav-buttons{
+.lower-nav-buttons {
   margin-top: 50px;
-  
+
 }
 
 input {
-  width: clamp(250px , 50%, 1000px);
-  height: 30px;
-  margin-left: 100px;
+  width: clamp(200px, 80%, 1000px);
+  height: 40px;
   border-radius: 10px;
   border: none;
   background-color: whitesmoke;
   padding: 15px;
 }
 
-.banner-nav > li {
+.banner-nav>li {
   list-style: none;
 }
 
 button {
-  width: 150px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
   background-color: rgba(231, 3, 91, 0.86);
   color: white;
   border: none;
@@ -179,4 +195,10 @@ button {
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 50px;
+  margin: 5px;
+}
+
+.banner-nav {
+  display: flex;
+  flex-wrap: wrap ;
 }
