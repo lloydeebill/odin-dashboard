@@ -40,7 +40,6 @@ p, h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-column: 2 / 6;
-
 }
 
 .upper-header{
@@ -48,6 +47,7 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
 }
+
 
 .banner{
   display: grid;
@@ -76,14 +76,27 @@ button {
 }
 
 .main-content {
-  background-color: grey;
   display: grid;
-  gap: 15px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
+.left-card-container , .right-card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 15px;  
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+.right-card-container {
+  display: grid;
+}
+
+
 .card {
-  width: 500px;
+  width: 400px;
   height: 200px;
   background-color: wheat;
 }
@@ -116,3 +129,4 @@ input {
   width: clamp(250px , 50%, 1000px);
   height: 25px;
 }
+
