@@ -99,8 +99,10 @@ h6 {
 
 .main-content {
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 5fr 1.5fr;
   background-color: whitesmoke;
+  padding-left: 50px;
+  padding-right: 50px;
 
 }
 
@@ -191,10 +193,6 @@ button {
   margin: 5px;
 }
 
-.banner-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .nav-buttons {
   display: flex;
@@ -229,7 +227,7 @@ button {
 }
 
 .user-pic {
-  border-radius: 50px;
+  border-radius: 60px;
 }
 
 
@@ -261,15 +259,37 @@ button {
 }
 
 .announcement-content > h4 {
-  font-size: clamp(0.5em, 0.8vw, 1.5em);
+  font-size: clamp(0.6em, 0.75vw, 1.5em);
 
 }
 
 .announcement-content > p {
-  font-size: clamp(0.5em, 0.6vw, 1.5em);
+  font-size: clamp(0.6em, 0.65vw, 1.5em);
 
 }
 
 .announcement-content:last-child {
   border: none;
 }
+
+.trending-content{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 1fr;
+  gap: 30px;
+}
+
+.trending-card > ul {
+  display: grid;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.trending-info {
+  font-size: clamp(0.6em, 0.80vw, 1.5em);
+
+}
+
