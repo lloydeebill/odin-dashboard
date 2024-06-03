@@ -88,7 +88,7 @@ h6 {
 
 
 .sidebar {
-  background-color: rgba(231, 3, 91, 0.86);
+  background-color: rgba(13, 90, 61, 0.86);
   color: white;
   display: grid;
   gap: 15px;
@@ -137,11 +137,24 @@ h6 {
   height: 200px;
   background-color: white;
   border-radius: 10px;
-  border-left: 10px solid rgba(231, 3, 91, 0.86);
+  border-left: 10px solid rgba(13, 90, 61, 0.86);
 }
 
 .card-content {
   margin: 20px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+
+.card-icons>img {
+  width: 30px;
+
 }
 
 .sidebar {
@@ -183,7 +196,7 @@ input {
 button {
   width: 120px;
   height: 40px;
-  background-color: rgba(231, 3, 91, 0.86);
+  background-color: rgba(13, 90, 61, 0.86);
   color: white;
   border: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -255,7 +268,7 @@ button {
 }
 
 .announcement-content {
-  border-bottom: 1px solid rgba(231, 3, 91, 0.86);
+  border-bottom: 1px solid rgba(13, 90, 61, 0.86);
 }
 
 .announcement-content > h4 {
