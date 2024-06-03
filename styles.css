@@ -53,17 +53,17 @@ h6 {
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: auto 1fr; /* Change from 1fr 6fr to auto 1fr to fit content */
+  grid-template-rows: auto 1fr;
   min-height: 100vh;
 }
 
 .header {
   background-color: white;
-  padding: 40px 70px 40px 70px;
+  padding: 30px 70px 30px 70px;
   display: grid;
-  gap: 12px;
+  gap: 30px;
   grid-column: 2 / 6;
-  
+
 }
 
 
@@ -99,7 +99,7 @@ h6 {
 
 .main-content {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
   background-color: whitesmoke;
 
 }
@@ -193,7 +193,7 @@ button {
 
 .banner-nav {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
 }
 
 .icons {
@@ -216,7 +216,7 @@ button {
   gap: 20px;
 }
 
-.upper-name > p {
+.upper-name>p {
   font-weight: bold;
   font-size: 18px;
 }
@@ -233,8 +233,36 @@ button {
   gap: 15px;
 }
 
-.lower-name > div > p:nth-child(2) {
+.lower-name>div>p:nth-child(2) {
   font-weight: bold;
   font-size: 20px;
 }
 
+.dashboard-nav {
+  font-size: 1.75rem;
+}
+
+.announcement-card {
+  display: grid;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+.announcement-content {
+  border-bottom: 1px solid rgba(231, 3, 91, 0.86);
+}
+
+.announcement-content > h4 {
+  font-size: clamp(0.5em, 0.8vw, 1.5em);
+
+}
+
+.announcement-content > p {
+  font-size: clamp(0.5em, 0.6vw, 1.5em);
+
+}
+
+.announcement-content:last-child {
+  border: none;
+}
