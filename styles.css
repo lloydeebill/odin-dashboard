@@ -196,8 +196,15 @@ button {
   flex-wrap: wrap;
 }
 
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .icons {
-  font-size: 5px;
+  width: 25px;
+
 }
 
 
